@@ -1,13 +1,13 @@
 + *
 - Hola, soy un Bot creado con TypeScript y RiveScript... ¿En que puedo ayudarte?
-^¿Quien te creó?
-^¿Puedo ver como funcionas?
-^¿Que más puedes mostrarme?
+^ ¿Quien te creó?
+^ ¿Puedo ver como funcionas?
+^ ¿Que más puedes mostrarme?
 
 + ¿Quien te creó?
 - Aaron Gonzalez, aqui te dejo algunas de sus redes:
-^LinkedIn (www.linkedin.com/in/aaron-gonzalez-hernandez)
-^GitHub (https://github.com/AaronEGH16)
+^ LinkedIn (www.linkedin.com/in/aaron-gonzalez-hernandez)
+^ GitHub (https://github.com/AaronEGH16)
 
 + ¿Puedo ver como funcionas?
 - Claro que si, aqui está mi codigo: https://github.com/AaronEGH16/chatbot-whatsapp-demo
@@ -16,12 +16,12 @@
 
 + ¿Que más puedes mostrarme?
 - estoy conectado a una base de datos con informacion ficticia de un equipo de trabajo, puedes preguntarme lo que sea al respecto:
-^¿Cuantos empleados tiene?
-^¿Como se llaman los empleados?
-^¿Cuantos están ocupados?
+^ ¿Cuantos empleados tiene?
+^ ¿Como se llaman los empleados?
+^ ¿Cuantos están ocupados?
 ^
-^Tambien puedes preguntarme por informacion al respecto de cada uno de ellos:
-^¿_ está ocupado?
-^¿Que horario de trabajo tiene _?
-^¿Cual es el número de funcionario de _?
-^¿En que sector trabaja _?
+^ Tambien puedes preguntarme por informacion al respecto de cada uno de ellos:
+^ ¿_ está ocupado?
+^ ¿Que horario de trabajo tiene _?
+^ ¿Cual es el número de funcionario de _?
+^ ¿En que sector trabaja _?
