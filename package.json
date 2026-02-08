@@ -1,5 +1,17 @@
-"dependencies": {
-  "@netlify/functions": "^2.x.x",
-  "mysql2": "^3.x.x",
-  "rivescript": "^2.x.x"
+{
+  "name": "chatbot-whatsapp-demo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@netlify/functions": "^2.0.0",
+    "mysql2": "^3.0.0",
+    "rivescript": "^2.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "dev": "netlify dev"
+  }
 }
