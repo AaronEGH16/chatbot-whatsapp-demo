@@ -2,7 +2,7 @@ from flask import Flask, jsonify, request
 import os
 
 app = Flask(__name__)
-os.path.dirname(__file__)
+base_dir = os.path.dirname(__file__)
 
 #CUANDO RECIBAMOS LAS PETICIONES EN ESTA RUTA
 @app.route("/webhook/", methods=["POST", "GET"])
@@ -60,6 +60,24 @@ def webhook_whatsapp():
         mydb.commit()
       #RETORNAMOS EL STATUS EN UN JSON
       return jsonify({"status": "success"}, 200)
+
 #INICIAMOS EL PROYECTO CON NETLIFY
+from urllib.parse import parse_qs
+from werkzeug.test import EnvironBuilder
+from werkzeug.wrappers import Response
+
 def handler(event, context):
-    return app(event, context)
+    builder = EnvironBuilder(
+        method=event["httpMethod"],
+        path=event["path"],
+        headers=event["headers"],
+        data=event.get("body", "")
+    )
+    env = builder.get_environ()
+    response = Response.from_app(app, env)
+
+    return {
+        "statusCode": response.status_code,
+        "headers": dict(response.headers),
+        "body": response.get_data(as_text=True)
+    }
