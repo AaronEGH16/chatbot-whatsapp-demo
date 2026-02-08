@@ -61,12 +61,16 @@ export const handler: Handler = async (event) => {
 
     // ====== RIVESCRIPT ======
     console.log("Loading RiveScript...");
-    
-    const bot = new RiveScript();
-    await bot.loadFile(path.join(process.cwd(), "IA.rive"));
-    bot.sortReplies();
 
-    let respuesta = bot.reply("localuser", mensaje);
+    const bot = new RiveScript();
+
+    const rivePath = path.join(__dirname, "IA.rive");
+    console.log("Ruta IA.rive:", rivePath);
+
+    await bot.loadFile(rivePath);
+    await bot.sortReplies();
+
+    let respuesta = await bot.reply("localuser", mensaje);
     respuesta = respuesta.replace("\\n", "\n").replace("\\", "");
 
     console.log("Respuesta generada:", respuesta);
