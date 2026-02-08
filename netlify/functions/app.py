@@ -1,6 +1,9 @@
 from flask import Flask, jsonify, request
 import os
+
 app = Flask(__name__)
+os.path.dirname(__file__)
+
 #CUANDO RECIBAMOS LAS PETICIONES EN ESTA RUTA
 @app.route("/webhook/", methods=["POST", "GET"])
 def webhook_whatsapp():
@@ -29,7 +32,7 @@ def webhook_whatsapp():
       from rivescript import RiveScript
       #INICIALIZAMOS RIVESCRIPT Y CARGAMOS LA CONVERSACION
       bot = RiveScript()
-      bot.load_file('restaurante.rive')
+      bot.load_file(os.path.join(base_dir, 'IA.rive'))
       bot.sort_replies()
       #OBTENEMOS LA RESPUESTA
       respuesta= bot.reply("localuser",mensaje)
@@ -57,6 +60,6 @@ def webhook_whatsapp():
         mydb.commit()
       #RETORNAMOS EL STATUS EN UN JSON
       return jsonify({"status": "success"}, 200)
-#INICIAMSO FLASK
-if __name__ == "__main__":
-  app.run(debug=True)
+#INICIAMOS EL PROYECTO CON NETLIFY
+def handler(event, context):
+    return app(event, context)
