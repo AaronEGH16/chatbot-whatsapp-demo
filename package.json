@@ -1,1 +1,5 @@
-npm install @netlify/functions mysql2 rivescript
+"dependencies": {
+  "@netlify/functions": "^2.x.x",
+  "mysql2": "^3.x.x",
+  "rivescript": "^2.x.x"
+}
