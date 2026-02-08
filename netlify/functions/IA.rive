@@ -1,27 +1,26 @@
 + *
-- Hola, soy un Bot creado con TypeScript y RiveScript... ¿En que puedo ayudarte?
-^ ¿Quien te creó?
-^ ¿Puedo ver como funcionas?
-^ ¿Que más puedes mostrarme?
+- Hola, soy un Bot creado con TypeScript y RiveScript... ¿En qué puedo ayudarte?
+^ ¿Quién te creó?
+^ ¿Puedo ver cómo funcionas?
+^ ¿Qué más puedes mostrarme?
 
-+ Quien te creó
-- Aaron Gonzalez, aqui te dejo algunas de sus redes:
++ quien te creo
+- Aaron Gonzalez, aquí te dejo algunas de sus redes:
 ^ LinkedIn (www.linkedin.com/in/aaron-gonzalez-hernandez)
 ^ GitHub (https://github.com/AaronEGH16)
 
-+ Puedo ver como funcionas
-- Claro que si, aqui está mi codigo: https://github.com/AaronEGH16/chatbot-whatsapp-demo
-- Por supuesto, aqui te dejo un enlace a mi codigo: https://github.com/AaronEGH16/chatbot-whatsapp-demo
-- adelante, puedes ver mi codigo dentro de este enlace: https://github.com/AaronEGH16/chatbot-whatsapp-demo
++ puedo ver como funcionas
+- Claro que sí, aquí está mi código:
+^ https://github.com/AaronEGH16/chatbot-whatsapp-demo
 
-+ Que más puedes mostrarme
-- estoy conectado a una base de datos con informacion ficticia de un equipo de trabajo, puedes preguntarme lo que sea al respecto:
-^ ¿Cuantos empleados tiene?
-^ ¿Como se llaman los empleados?
-^ ¿Cuantos están ocupados?
++ que mas puedes mostrarme
+- Estoy conectado a una base de datos con información ficticia de un equipo de trabajo. Puedes preguntarme:
+^ ¿Cuántos empleados tiene?
+^ ¿Cómo se llaman los empleados?
+^ ¿Cuántos están ocupados?
 ^
-^ Tambien puedes preguntarme por informacion al respecto de cada uno de ellos:
+^ También puedes preguntarme:
 ^ ¿_ está ocupado?
-^ ¿Que horario de trabajo tiene _?
-^ ¿Cual es el número de funcionario de _?
-^ ¿En que sector trabaja _?
+^ ¿Qué horario de trabajo tiene _?
+^ ¿Cuál es el número de funcionario de _?
+^ ¿En qué sector trabaja _?
