@@ -1,0 +1,16 @@
+{
+  "name": "netlify-typescript-functions",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@netlify/functions": "^2.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "dev": "netlify dev",
+    "build": "echo \"No build needed\""
+  }
+}
